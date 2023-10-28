@@ -1,0 +1,555 @@
+$mainTransition: 0.6s ease;
+$colorSiple: #Fff;
+$colorTitle: #4f4f4f;
+$colorSmallTitle: #676666;
+$colorText: #818181;
+$buttonMainColor: #12b367;
+$buttoNlogCol: #444;
+$buttonSubCol: #029bb1;
+$formLogCol: #e67624;
+$formSubCol: #01d4f3;
+$inputColor: #e8e8e8;
+
+.header {
+    &__logo a>img:hover {
+        transform: rotate(360deg);
+        transition: 0.6s ease;
+    }
+
+    &__logo a>img {
+        transform: rotate(0deg);
+        transition: 0.6s ease;
+    }
+
+    &__nav-list li>a {
+        transition: all ease 0.6s;
+        animation: buttonHeaderRemove 0.5s ease-in-out forwards;
+
+    }
+
+    &__nav-list li>a.hove {
+        animation: buttonHeaderNav 0.5s ease-in-out forwards;
+    }
+
+    &__foot-img a>img:hover {
+        transform: skew(15deg);
+        transition: $mainTransition;
+    }
+
+    &__foot-link a:hover {
+        transition: $mainTransition;
+        animation: headerLinkBg 0.5s ease-in-out forwards;
+    }
+
+    &__foot-link a {
+        transition: $mainTransition;
+        animation: headerLinkBgRem 0.5s ease-in-out forwards;
+    }
+
+    &__burger.active {
+        opacity: 1;
+    }
+
+    &__burger span {
+        transition: $mainTransition;
+    }
+
+    &__burger.active span:nth-child(1) {
+        transform: rotate(50deg);
+        transition: $mainTransition;
+        position: relative;
+        top: 17%;
+    }
+
+    &__burger.active span:nth-child(2) {
+        transform: scale(0);
+    }
+
+    &__burger.active span:nth-child(3) {
+        transform: rotate(-50deg);
+        transition: $mainTransition;
+        position: relative;
+        bottom: 50%;
+    }
+
+    &__nav-list.active.row {
+        transform: translate(0);
+        transition: $mainTransition;
+        background-color: #020024;
+    }
+
+    &__foot-text {
+        animation: headerFootText 0.5s ease-in-out forwards;
+        transition: $mainTransition;
+    }
+
+
+}
+
+.main {
+    &__icons-list.row {
+        opacity: 0;
+        transform: translateX(-125%);
+        transition: all ease 1.5s;
+
+    }
+
+    &__icons-list.row.swap {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all ease 1.5s;
+    }
+
+    &__info-img {
+        opacity: 0;
+        transform: translateX(-125%);
+        transition: all ease 1.5s;
+    }
+
+    &__info-img.swap {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all ease 1.5s;
+    }
+
+    &__info-title {
+        opacity: 0;
+        transform: translateX(-125%);
+        transition: all ease 1.5s;
+    }
+
+    &__info-title.swap {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all ease 1.5s;
+    }
+
+    &__info-subtitle {
+        opacity: 0;
+        transition: all ease 1.5s;
+    }
+
+    &__info-subtitle.swap {
+        opacity: 1;
+        transition: all ease 1.5s;
+    }
+
+    &__why-video {
+        opacity: 0;
+        transform: translateX(-125%);
+        transition: all ease 1.5s;
+    }
+
+    &__why-video.swap {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all ease 1.5s;
+    }
+
+    &__why-text {
+        opacity: 0;
+        transition: all ease 1.5s;
+    }
+
+    &__why-text.swap {
+        opacity: 1;
+        transition: all ease 1.5s;
+    }
+
+    &__buy-button {
+        animation: buttonBuyBackground 10s ease infinite;
+        width: 40%;
+        transform: translate(-300%, 300%) rotate(360deg);
+        transition: all 3s ease 0s;
+    }
+
+    &__buy-button.swap {
+        transform: translate(0, 0);
+        transition: all 2s ease 0s;
+        width: 100%;
+    }
+
+    &__buy-button button {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    &__buy form>div>a:hover {
+        color: #000;
+    }
+
+    &__buy form>div>input {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    &__buy-button button:hover {
+        animation: buttonBuyHover 0.3s ease forwards;
+    }
+
+    &__buy form>button:hover {
+        background-color: $colorSiple;
+        border: outset 1px #3f5efb;
+        color: #000;
+        transition: all ease 0.5s;
+    }
+}
+
+.arrow__up a.block {
+    animation: arrowUp 0.5s ease-in-out forwards;
+    transition: $mainTransition;
+    transform: translate(0);
+}
+
+.arrow__up a:hover {
+    box-shadow: 0px 0px 40px #020024;
+    transform: scale(1.1);
+}
+
+@keyframes buttonHeaderRemove {
+    0% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 0%, rgb(255, 0, 0) 100%);
+    }
+
+    10% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 10%, red 90%);
+    }
+
+    20% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 20%, rgb(255, 0, 0) 80%);
+    }
+
+    30% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 30%, rgb(255, 0, 0) 70%);
+    }
+
+    40% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 40%, rgb(255, 0, 0) 60%);
+    }
+
+    50% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 50%, red 50%);
+    }
+
+    60% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 60%, red 40%);
+    }
+
+    70% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 70%, red 30%);
+    }
+
+    80% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, red 20%);
+    }
+
+    90% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 90%, red 10%);
+    }
+
+    100% {
+        background-color: #020024;
+    }
+}
+
+@keyframes buttonHeaderNav {
+    0% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 100%, rgb(255, 0, 0) 0%);
+    }
+
+    10% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 90%, red 10%);
+    }
+
+    20% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 80%, rgb(255, 0, 0) 20%);
+    }
+
+    30% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 70%, rgb(255, 0, 0) 30%);
+    }
+
+    40% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 60%, rgb(255, 0, 0) 40%);
+    }
+
+    50% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 50%, red 50%);
+    }
+
+    60% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 40%, red 60%);
+    }
+
+    70% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 30%, red 70%);
+    }
+
+    80% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 20%, red 80%);
+    }
+
+    90% {
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0) 10%, red 90%);
+    }
+
+    100% {
+        background-color: red;
+        box-shadow: 0px 0px 25px red;
+    }
+}
+
+@keyframes headerLinkBg {
+    0% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+    }
+
+    10% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 90%);
+
+    }
+
+    20% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 80%);
+
+    }
+
+    30% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 70%);
+
+    }
+
+    40% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 60%);
+
+    }
+
+    50% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%);
+
+    }
+
+    60% {
+        background: linear-gradient(180deg rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 50%);
+
+    }
+
+    70% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 50%);
+
+    }
+
+    80% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 80%);
+
+    }
+
+    90% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 90%);
+        color: #000;
+
+    }
+
+    100% {
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0px 0px 25px #fff;
+    }
+}
+
+@keyframes headerLinkBgRem {
+    0% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%);
+    }
+
+    10% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 10%);
+
+    }
+
+    20% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 20%);
+
+    }
+
+    30% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 30%);
+
+    }
+
+    40% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 40%);
+
+    }
+
+    50% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 50%);
+
+    }
+
+    60% {
+        background: linear-gradient(180deg rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 50%);
+
+    }
+
+    70% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 50%);
+
+    }
+
+    80% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 80%, rgb(255, 255, 255) 80%);
+
+    }
+
+    90% {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 90%);
+        color: #000;
+
+    }
+
+    100% {
+        background-color: none;
+
+    }
+}
+
+@keyframes headerFootText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes buttonBuyHover {
+    0% {
+        background: rgb(63, 94, 251);
+        background: radial-gradient(circle, #3f5efb 0%, rgba(255, 255, 255, 1) 0%);
+    }
+
+    10% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 10%, rgba(255, 255, 255, 1) 10%);
+
+
+    }
+
+    20% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 20%, rgba(255, 255, 255, 1) 20%);
+
+
+    }
+
+    30% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 30%, rgba(255, 255, 255, 1) 30%);
+
+
+    }
+
+    40% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 40%, rgba(255, 255, 255, 1) 40%);
+
+
+    }
+
+    50% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 50%, rgba(255, 255, 255, 1) 50%);
+
+
+    }
+
+    60% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 60%, rgba(255, 255, 255, 1) 60%);
+
+
+    }
+
+    70% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 70%, rgba(255, 255, 255, 1) 70%);
+
+
+    }
+
+    80% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 80%, rgba(255, 255, 255, 1) 80%);
+
+
+    }
+
+    90% {
+        background: radial-gradient(circle, rgba(63, 94, 251, 1) 90%, rgba(255, 255, 255, 1) 90%);
+
+    }
+
+    100% {
+        background-color: rgba(63, 94, 251, 1);
+        box-shadow: 0px 0px 25px rgba(63, 94, 251, 1);
+        color: #fff;
+
+    }
+}
+
+@keyframes buttonBuyBackground {
+    0% {
+        background-color: red;
+    }
+
+    10% {
+        background: yellow;
+
+    }
+
+    20% {
+        background: green;
+
+
+    }
+
+    30% {
+        background: blueviolet;
+
+
+    }
+
+    40% {
+        background: black;
+
+
+    }
+
+    50% {
+        background: purple;
+
+
+    }
+
+    60% {
+        background: skyblue;
+
+
+    }
+
+    70% {
+        background: orangered;
+
+
+    }
+
+    80% {
+        background: pink;
+
+
+    }
+
+    90% {
+        background: rebeccapurple;
+
+    }
+
+    100% {
+        background-color: $buttonSubCol;
+    }
+}

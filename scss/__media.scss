@@ -1,0 +1,92 @@
+$colorSiple: #Fff;
+$colorTitle: #4f4f4f;
+$colorSmallTitle: #676666;
+$colorText: #818181;
+$buttonMainColor: #12b367;
+$buttoNlogCol: #444;
+$buttonSubCol: #029bb1;
+$formLogCol: #e67624;
+$formSubCol: #01d4f3;
+$inputColor: #e8e8e8;
+$mainTransition: 0.6s ease;
+
+@media (max-width: 62em) {
+
+    .header {
+        // &__nav-list.row {
+        //     position: fixed;
+        //     top: 0;
+        //     right: 0;
+        //     width: 50vw;
+        //     height: 100%;
+        //     background-color: #0200244c;
+        //     flex-direction: column;
+        //     gap: 50px;
+        //     align-items: flex-end;
+        //     z-index: 5;
+        //     padding: 150px 15px 0px 0px;
+        //     transform: translateX(100%);
+        //     transition: $mainTransition;
+        // }
+
+        // &__burger {
+        //     display: flex;
+        //     width: 50px;
+        //     height: 50px;
+        //     flex-direction: column;
+        //     align-items: center;
+        //     justify-content: space-around;
+        //     z-index: 6;
+        //     opacity: 0.7;
+        // }
+
+        // &__burger span {
+        //     display: block;
+        //     width: 100%;
+        //     height: 5px;
+        //     background-color: $colorSiple;
+        //     border: solid 1px red;
+        // }
+
+
+        &__foot.row {
+            align-items: center;
+        }
+
+        &__foot-item.block {
+            width: 200vw !important;
+            gap: 0px !important;
+        }
+
+    }
+
+    .main {
+        &__icons-list.row.swap {
+            flex-direction: column;
+            gap: 50px;
+            margin: 250px 0px 0px 0px;
+        }
+
+        &__why.row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__why-title {
+            text-align: center;
+        }
+
+        &__buy-button.swap>button {
+            width: 97%;
+        }
+    }
+
+    iframe {
+        width: 300px;
+        height: 315px;
+    }
+}
+
+@media (max-width: 47.9375em) {}
+
+@media (max-width: 28.125em) {}

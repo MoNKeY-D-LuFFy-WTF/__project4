@@ -1,0 +1,83 @@
+$colorSiple: #Fff;
+$colorTitle: #4f4f4f;
+$colorSmallTitle: #676666;
+$colorText: #818181;
+$buttonMainColor: #12b367;
+$buttoNlogCol: #444;
+$buttonSubCol: #029bb1;
+$formLogCol: #e67624;
+$formSubCol: #01d4f3;
+$inputColor: #e8e8e8;
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 985px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-family: 'Segoe WPN', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: calc(33px + 31.7 * (100vw / 1280)); //!64.7px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $colorSiple;
+}
+
+h2 {
+    font-size: calc(23px + 15.7 * (100vw / 1280)); //!38.7px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $colorTitle;
+}
+
+h3 {
+    font-size: calc(17px + 15.7 * (100vw / 1280)); //!32.7px;
+    font-size: 32.7px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $colorTitle;
+}
+
+h4 {
+    font-size: calc(13px + 15.7 * (100vw / 1280)); //!28.7px;
+    font-size: 28px;
+    font-weight: 300;
+    color: $colorSiple;
+}
+
+h5 {
+    font-size: calc(11px + 15.7 * (100vw / 1280)); //!26.7px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $colorSmallTitle;
+}
+
+h6 {
+    font-size: calc(7px + 15.7 * (100vw / 1280)); //!22.7px;
+    font-weight: 300;
+    color: $colorSiple;
+}
+
+p {
+    font-family: 'Univers CE', Arial, Helvetica, sans-serif;
+    font-size: calc(12px + 2 * (100vw / 1280)); //!14px;
+    font-weight: 300;
+    color: $colorText;
+}
